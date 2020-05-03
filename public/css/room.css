@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.952);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.top {
+  width: 100%;
+  /* height: 10px; */
+  font-size: 15px;
+  background-color: black;
+  border-bottom: 1px white dotted;
+  position: sticky;
+  background-attachment: fixed;
+  top: 0;
+}
+
+#main {
+  max-width: 1300px;
+  padding: 0 30px 50px 30px;
+  min-width: 300px;
+  margin: auto;
+}
+#main ul#list-message {
+  width: 100%;
+  list-style: symbols('>>');
+}
+#main ul#list-message li{
+  width: 100%;
+}
+#main ul#list-message li.message strong{
+  color: rgb(0, 182, 0);
+}
+
+#form-message {
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  bottom: 0px;
+  padding: 10px 0;
+  display: flex;
+  /* box-shadow: white 0px -15px 20px -20px;  */
+  border-top: 1px solid white;
+}
+#form-message input {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 3px 0 3px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border-bottom: 1px dotted white;
+}
+#form-message button {
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 3px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: 1px dotted white;
+  cursor: pointer;
+}
+#form-message button:hover {
+  border: 1px dashed white;
+}

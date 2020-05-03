@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#form-home{
+    min-width: 300px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+}
+#form-home input{
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    border-bottom: 1px dotted white;
+    padding: 3px 7px;
+}
+#form-home button{
+    border: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    padding: 3px 7px;
+    cursor: pointer;
+    border: 1px dotted white;
+}
+#form-home button:hover{
+    border: 1px dashed white;
+}
+/* #form-home a{
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 15px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+}
+#form-home a:hover{
+    color: white;
+} */

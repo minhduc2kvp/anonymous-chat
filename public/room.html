@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/room.css" />
+    <title>anonymous</title>
+  </head>
+  <body>
+    <div class="top">id room : <strong id="id-room"></strong>  -  users in room : <strong id="number-user"></strong></div>
+    <main id="main">
+      <ul id="list-message">
+      </ul>
+    </main>
+    <form id="form-message">
+      <input type="text" name="message" id="message" />
+      <button type="submit">send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

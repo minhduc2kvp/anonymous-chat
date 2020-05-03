@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>anonymous</title>
+</head>
+<body>
+    
+    <form action="/room" id="form-home">
+        <!-- <div class="title">welcome</div> -->
+        <input type="hidden" name="username" id="username">
+        <input type="text" name="idRoom" placeholder="id room">
+        <button type="submit">join</button>
+        <!-- <a href="" id="create-room">create room</a> -->
+    </form>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const username = urlParams.get('username');
+        document.getElementById('username').value = username;
+        document.getElementById('create-room').setAttribute('href',`/create-room?username=${username}`);
+    </script>
+    
+</body>
+</html>
